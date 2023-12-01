@@ -1,16 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import { LOGO, BG_IMG } from "./utils/constant";
 const Header = () => {
   return (
-    <nav className='bg-blue-600 text-white p-8 w-full'>
-      <ul className='flex w-1/3 space-x-8 text-xl font-bold cursor-pointer'>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Cart</li>
-      </ul>
+    <nav className="text-black p-1 w-full flex space-x-28 items-center  bg-opacity-50 absolute">
+      <img className="w-40 cursor-pointer" src={LOGO} />
     </nav>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
